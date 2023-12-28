@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisasi Dan Kepemimpinan</title>
+
+    <link rel="stylesheet" href="assets/css/output.css">
+</head>
+
+<body>
+    <header class="absolute top-0 left-0 z-50 w-full">
+        <nav class="relative flex justify-between items-center bg-gray-100 p-2">
+            <h1 class="text-xs sm:text-base md:text-lg lg:text-xl font-medium">Surat Pernyataan Melaksanakan Penunjang
+                Tugas Dosen
+            </h1>
+            <img class="w-[50px] sm:w-[60px] md:w-[80px] lg:w-[100px]" src="./assets/img/Logo-umm-UMM.png"
+                alt="logo-umm">
+        </nav>
+    </header>
+    <main class="flex justify-center relative gap-4 bg-cover bg-[url('../img/hero-img.png')] pt-20 pb-4">
+
+        <!-- Arrow Left -->
+        <img id="arrow"
+            class="block md:hidden arrow rounded-r-full bg-gray-100 p-2 absolute top-[50%] left-0 -translate-y-[38%]"
+            src="./assets/img/angle-right-solid.svg" alt="">
+        <!-- Arrow Left -->
+
+        <div id="profile" class="h-screen absolute top-[50%] left-0 -translate-y-[43%] translate-x-[-100vw] transition-all ease-in-out md:translate-x-0 md:-translate-y-0 md:static
+        basis-[100%] md:basis-[35%] lg:basis-[30%] flex flex-col justify-evenly bg-gray-100 rounded-lg shadow-lg p-6">
+            <img id="xIcon" class="w-3 ml-auto mb-4 md:hidden" src="./assets/img/x-solid.svg" alt="x-icon">
+            <img class="mb-4 md:mb-0 bg-no-repeat block mx-auto rounded-full w-[50%]" src="./assets/img/profile-img.jpg"
+                alt="profile-img">
+            <h2 class="px-4 py-2 mb-4 md:mb-0 rounded-md text-gray-600 border border-solid border-gray-400">John Doe
+            </h2>
+            <h2 class="px-4 py-2 mb-4 md:mb-0 rounded-md text-gray-600 border border-solid border-gray-400">
+                Teknik-Informatika
+            </h2>
+            <button class="bg-red-600 py-2 px-16 lg:px-20 rounded-full mx-auto text-white block">Log Out</button>
+        </div>
+        <div
+            class="basis-[80%] md:basis-[57%] lg:basis-[63%] bg-gray-100 rounded-lg flex pt-8 md:py-8 items-center flex-col gap-8">
+
+            <h1 class="pl-6 md-p-0 text-xl font-semibold">Bidang Kegiatan Penalaran dan Keilmuan</h1>
+            <div class="bg-gray-300 p-4 w-full md:w-[80%] rounded-xl">
+                <h3 class="text-sm font-medium mb-4">Pilih Kegiatan</h3>
+                <button class="flex items-center gap-8 mb-4 font-medium rounded-lg px-2 py-1 bg-gray-100">Panitia
+                    Kegiatan <img class="w-5" src="./assets/img/circle-chevron-right-solid.svg" alt="arrow"></button>
+                <button class="flex items-center gap-8 mb-4 font-medium rounded-lg px-2 py-1 bg-gray-100">Kepengurusan
+                    Organisasi
+                    <img class="w-5" src="./assets/img/circle-chevron-right-solid.svg" alt="arrow"></button>
+
+                <div class="flex flex-col gap-2 mb-4">
+                    <label class="text-lg font-medium" for="namaKegiatan">Nama Kegiatan</label>
+                    <input class="border-0 p-2 rounded-lg" id="namaKegiatan" type="text" name="namaKegiatan">
+                    <label class="text-lg font-medium" for="keterangan">Keterangan</label>
+                    <input class="border-0 p-2 rounded-lg" id="keterangan" type="text" name="keterangan">
+                    <label class="text-lg font-medium" for="jabatan">Jabatan</label>
+                    <input class="border-0 p-2 rounded-lg" id="jabatan" type="text" name="jabatan">
+                    <label class="text-lg font-medium" for="tingkatan">Tingkatan</label>
+                    <input class="border-0 p-2 rounded-lg" id="tingkatan" type="text" name="tingkatan">
+                    <label class="text-lg font-medium" for="tahun">Tahun</label>
+                    <input class="border-0 p-2 rounded-lg" id="tahun" type="text" name="tahun">
+                    <label class="text-lg font-medium" for="no_sertif_or_sk">Nomor Sertifikat/SK</label>
+                    <input class="border-0 p-2 rounded-lg" id="no_sertif_or_sk" type="text" name="no_sertif_or_sk">
+                    <label class="text-lg font-medium" for="up_sertif">Upload Sertifikat</label>
+                    <input id="up_sertif" type="file" name="upload_srtif">
+                </div>
+            </div>
+            <div class="flex justify-center gap-4">
+                <a href="pilihbidang.html">
+                    <button class=" rounded-lg text-white flex items-center gap-2 bg-blue-700 px-4 py-2"><img
+                            src="./assets/img/arrow-left-solid.svg" alt="arrow">Kembali</button>
+                </a>
+                <button class="flex gap-2 items-center rounded-lg text-white bg-yellow-500 px-4 py-2"><img
+                        src="assets/img/floppy-disk-solid.svg" alt="disk">Simpan</button>
+                <button class="flex gap-2 items-center rounded-lg text-white bg-red-600 px-4 py-2"><img
+                        src="assets/img/x-2-solid.svg" alt="disk">Tutup</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
