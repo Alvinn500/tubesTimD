@@ -19,7 +19,7 @@
                 alt="logo-umm">
         </nav>
     </header>
-    <main class="flex justify-center relative gap-4 bg-cover bg-[url('../img/hero-img.png')] pt-20 pb-4">
+    <main class="flex justify-center relative gap-4 bg-cover bg-[url('../img/hero-img.png')] bg-no-repeat pt-20 pb-6">
 
         <!-- Arrow Left -->
         <img id="arrow"
@@ -44,14 +44,23 @@
 
             <h1 class="pl-6 md-p-0 text-xl font-semibold">Bidang Kegiatan Penalaran dan Keilmuan</h1>
             <div class="bg-gray-300 p-4 w-full md:w-[80%] rounded-xl">
-                <h3 class="text-sm font-medium mb-4">Pilih Kegiatan</h3>
-                <button class="flex items-center gap-8 mb-4 font-medium rounded-lg px-2 py-1 bg-gray-100">Panitia
-                    Kegiatan <img class="w-5" src="./assets/img/circle-chevron-right-solid.svg" alt="arrow"></button>
-                <button class="flex items-center gap-8 mb-4 font-medium rounded-lg px-2 py-1 bg-gray-100">Kepengurusan
-                    Organisasi
-                    <img class="w-5" src="./assets/img/circle-chevron-right-solid.svg" alt="arrow"></button>
+                <!-- <h3 class="text-sm font-medium mb-4">Pilih Kegiatan</h3>
+                <button class="flex items-center font-medium gap-8 mb-4 rounded-lg px-2 py-1 bg-gray-100">Mengikuti
+                    Kegiatan/Forum
+                    Ilmiah <img class="w-5" src="./assets/img/circle-chevron-right-solid.svg" alt="arrow"></button>
+                <button class="flex items-center font-medium gap-8 mb-4 rounded-lg px-2 py-1 bg-gray-100">Menghasilkan
+                    Karya Populer
+                    secara Nasional
+                    <img class="w-5" src="./assets/img/circle-chevron-right-solid.svg" alt="arrow"></button> -->
 
                 <div class="flex flex-col gap-2 mb-4">
+                    <label for="countries" class="text-lg font-medium text-black">Pilih Kegiatan</label>
+                    <select
+                        class="border mb-8 text-base rounded-lg block w-full p-2.5 bg-white focus:outline-none text-black">
+                        <option class="text-black" selected>Pilih Kegiatan</option>
+                        <option class="text-black" value="US">Panitia Kegiatan</option>
+                        <option class="text-black" value="CA">Kepengurusan Organisasi</option>
+                    </select>
                     <label class="text-lg font-medium" for="namaKegiatan">Nama Kegiatan</label>
                     <input class="border-0 p-2 rounded-lg" id="namaKegiatan" type="text" name="namaKegiatan">
                     <label class="text-lg font-medium" for="keterangan">Keterangan</label>
